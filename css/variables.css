@@ -1,0 +1,163 @@
+/* Cloud UI Variables */
+
+/* 
+Content:
+ - Base Colors
+ - Shades
+ - Shadows
+ - transition
+ - Spacings
+ - Borders
+ - Typography
+*/
+
+/* 
+
+ Proposed breakpoints:
+  xs: 32rem, // ~512px
+  sm: 48rem, // ~768px
+  md: 64rem, // ~1024px
+  lg: 80rem, // ~1280px
+  xl: 90rem  // ~1440px
+
+*/
+
+/* Base Colors */
+:root {
+  --primary-color: #53c6d9;
+  --secondary-color: #ae98e7;
+  --accient-color: #fc608c;
+
+  --success-color: #7ad88f;
+  --danger-color: #e15554;
+  --warn-color: #e4cf66;
+
+  --dark-color: #0a0f15;
+  --light-color: #f7f0fe;
+}
+
+/* Color Shades */
+:root {
+  --primary-light: #87d7e4;
+  --primary-lighter: #bae8f0;
+  --primary-lightest: #d4f1f6;
+
+  --secondary-light: #c6b7ee;
+  --secondary-lighter: #dfd6f5;
+  --secondary-lightest: #ebe5f9;
+
+  --accient-light: #fd90af;
+  --accient-lighter: #febfd1;
+  --accient-lightest: #fed7e2;
+
+  --success-light: #a2e4b1;
+  --success-lighter: #caefd2;
+  --success-lightest: #def5e3;
+
+  --danger-light: #c6b7ee;
+  --danger-lighter: #dfd6f5;
+  --danger-lightest: #ebe5f9;
+
+  --warn-light: #ecdd94;
+  --warn-lighter: #f4ecc2;
+  --warn-lightest: #f8f3d9;
+
+  --dark-light: #54575b;
+  --dark-lighter: #9d9fa1;
+  --dark-lightest: #c2c3c5;
+
+  --light-light: #fcf9ff;
+  --light-lighter: #fdfbff;
+  --light-lightest: #fefeff;
+}
+
+/* shadows */
+:root {
+  --box-shadow-xm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --box-shadow-sm: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  --box-shadow-md3: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  --box-shadow-lg: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  --box-shadow-xl: 0 19px 38px rgba(0, 0, 0, 0.3),
+    0 15px 12px rgba(0, 0, 0, 0.22);
+  --box-shadow-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Transition Timing Functions */
+:root {
+  --ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Spacing */
+:root {
+  --space-unit: 1rem;
+}
+
+:root,
+* {
+  --space-xxxxs: calc(0.125 * var(--space-unit));
+  --space-xxxs: calc(0.25 * var(--space-unit));
+  --space-xxs: calc(0.375 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+  --space-xxxl: calc(8.5 * var(--space-unit));
+  --space-xxxxl: calc(13.75 * var(--space-unit));
+  --component-padding: var(--space-md);
+}
+
+@media screen and (max-width: 64rem) {
+  :root {
+    --space-unit: 1.5625rem;
+  }
+}
+
+/* Borders radius */
+:root {
+  --radius: 0.25em;
+  --radius-sm: calc(var(--radius) / 2);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) * 2);
+}
+
+/* Typography */
+
+:root {
+  --font-primary: "Rubik", sans-serif;
+  --font-secondary: Georgia, serif;
+}
+
+:root {
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.2;
+}
+
+@media screen and (max-width: 64rem) {
+  :root {
+    --text-base-size: 1.25rem;
+    --text-scale-ratio: 1.25;
+  }
+}
+
+:root,
+* {
+  --text-xs: calc(
+    (var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio)
+  );
+  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  --text-md: calc(
+    var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
+}
