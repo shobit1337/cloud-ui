@@ -113,7 +113,7 @@ Content:
   --component-padding: var(--space-md);
 }
 
-@media screen and (max-width: 64rem) {
+@media screen and (min-width: 64rem) {
   :root {
     --space-unit: 1.5625rem;
   }
@@ -139,7 +139,7 @@ Content:
   --text-scale-ratio: 1.2;
 }
 
-@media screen and (max-width: 64rem) {
+@media screen and (min-width: 64rem) {
   :root {
     --text-base-size: 1.25rem;
     --text-scale-ratio: 1.25;
