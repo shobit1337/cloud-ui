@@ -1,0 +1,68 @@
+/* 
+  Avatar
+*/
+
+.avatar {
+  /* Positioning */
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  /* Color */
+  background-color: var(--dark-lighter); /* Default Color */
+  color: inherit;
+  box-shadow: var(--box-shadow-xm);
+  transition: all 250ms var(--ease-in-out);
+
+  /* Spacing */
+  width: var(--space-xl);
+  height: var(--space-xl);
+  font-size: var(--text-xl);
+}
+
+.avatar:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.avatar > img {
+  position: absolute;
+  aspect-ratio: 1/1;
+}
+
+.avatar-rounded {
+  border-radius: var(--radius-md);
+}
+
+.avatar-circle {
+  border-radius: 50%;
+}
+
+/* Sizes */
+.avatar-sm {
+  width: var(--space-lg);
+  height: var(--space-lg);
+  font-size: var(--text-lg);
+}
+
+.avatar-md {
+  width: var(--space-xl);
+  height: var(--space-xl);
+  font-size: var(--text-xl);
+}
+
+.avatar-lg {
+  width: var(--space-xxl);
+  height: var(--space-xxl);
+  font-size: var(--text-xxl);
+  font-size: var(--text-xxl);
+}
+
+.avatar-xl {
+  width: var(--space-xxxl);
+  height: var(--space-xxxl);
+  font-size: var(--text-xxxl);
+  font-size: var(--text-xxxl);
+}
