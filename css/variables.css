@@ -137,6 +137,7 @@ Content:
 :root {
   --text-base-size: 1rem;
   --text-scale-ratio: 1.2;
+  --text-unit: var(--text-base-size);
 }
 
 @media screen and (min-width: 64rem) {
