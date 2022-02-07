@@ -83,7 +83,7 @@
   color: var(--dark-color);
 }
 .btn-disabled {
-  cursor: none;
+  cursor: not-allowed;
   box-shadow: none;
   background-color: var(--dark-lightest);
 }
