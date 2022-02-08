@@ -1,0 +1,66 @@
+/* 
+  Alerts
+*/
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  height: auto;
+  padding: var(--space-xs);
+  margin: var(--space-xs);
+  border-radius: var(--radius-md);
+
+  color: var(--primary-color);
+  background-color: var(--primary-lightest);
+  border: 3px solid;
+}
+
+.alert > .alert-icon {
+  order: 1;
+}
+
+.alert > .alert-close {
+  order: 3;
+  cursor: pointer;
+}
+.alert > .alert-close:hover,
+.alert > .alert-close:focus {
+  opacity: 0.8;
+}
+
+/* Colors */
+.alert-info,
+.alert-primary {
+  background-color: var(--primary-lightest);
+  color: var(--primary-color);
+}
+.alert-secondary {
+  background-color: var(--secondary-lightest);
+  color: var(--secondary-color);
+}
+.alert-accient {
+  background-color: var(--accient-lightest);
+  color: var(--accient-color);
+}
+.alert-success {
+  background-color: var(--success-lightest);
+  color: var(--success-color);
+}
+.alert-warn {
+  background-color: var(--warn-lightest);
+  color: var(--warn-color);
+}
+.alert-danger {
+  background-color: var(--danger-lightest);
+  color: var(--danger-color);
+}
+.alert-dark {
+  background-color: var(--dark-lightest);
+  color: var(--dark-color);
+}
+.alert-light {
+  background-color: var(--light-lightest);
+  color: var(--light-color);
+}
