@@ -1,0 +1,115 @@
+/* 
+  Toasts/Snackbar
+*/
+
+.toast {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  position: fixed;
+
+  padding: var(--space-sm);
+  margin: auto;
+  width: var(--space-xxxxl);
+  height: auto;
+
+  /* Design */
+  border-radius: var(--radius-md);
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  box-shadow: var(--box-shadow-xm);
+}
+
+.toast > .toast-icon {
+  order: 1;
+}
+
+.toast > .toast-close {
+  position: absolute;
+  right: var(--space-xxs);
+  top: var(--space-xxxs);
+  cursor: pointer;
+}
+.alert > .alert-close:hover,
+.alert > .alert-close:focus {
+  opacity: 0.8;
+}
+
+/* Positions */
+.toast-right-top {
+  right: var(--space-sm);
+  top: var(--space-sm);
+}
+
+.toast-right-bottom {
+  right: 2%;
+  bottom: 2%;
+}
+
+.toast-left-top {
+  left: 1%;
+  top: 1%;
+}
+
+.toast-left-bottom {
+  left: 1%;
+  bottom: 1%;
+}
+
+.toast-center-top {
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.toast-center-bottom {
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+/* Colors */
+.toast-info,
+.toast-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.toast-secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.toast-accient {
+  background-color: var(--accient-color);
+  color: var(--light-color);
+}
+
+.toast-danger {
+  background-color: var(--danger-color);
+  color: var(--light-color);
+}
+
+.toast-warn {
+  background-color: var(--warn-color);
+  color: var(--light-color);
+}
+
+.toast-success {
+  background-color: var(--success-color);
+  color: var(--light-color);
+}
+
+.toast-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.toast-light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
