@@ -1,0 +1,174 @@
+/* 
+  Text Utilitites:
+    - headings
+    - Size
+    - style
+    - align
+    - line height
+    - letter spacing
+*/
+
+h1,
+h2,
+h3,
+h4,
+.heading,
+.title {
+  /* color: TODO: */
+  line-height: var(--heading-line-height, 1.2);
+  font-weight: var(--heading-font-weight, 700);
+}
+
+h1,
+.h1 {
+  font-size: var(--text-xxl, 2rem);
+}
+
+h2,
+.h1 {
+  font-size: var(--text-xl, 1.75rem);
+}
+
+h3,
+.h1 {
+  font-size: var(--text-lg, 1.375rem);
+}
+
+h4,
+.h1 {
+  font-size: var(--text-md, 1.125rem);
+}
+
+small,
+.small {
+  font-size: var(--text-sm, 0.75rem);
+}
+
+/* Text Size */
+.text-xs {
+  font-size: var(--text-xs);
+}
+.text-sm {
+  font-size: var(--text-sm);
+}
+.text-base {
+  font-size: var(--text-unit, 1em);
+}
+.text-md {
+  font-size: var(--text-md);
+}
+.text-lg {
+  font-size: var(--text-lg);
+}
+.text-xl {
+  font-size: var(--text-xl);
+}
+.text-xxl {
+  font-size: var(--text-xxl);
+}
+.text-xxxl {
+  font-size: var(--text-xxxl);
+}
+.text-xxxxl {
+  font-size: var(--text-xxxxl);
+}
+
+/* Text Styles */
+.text-italic {
+  font-style: italic;
+}
+.text-light {
+  font-weight: 300;
+}
+.text-normal {
+  font-weight: 400;
+}
+.text-medium {
+  font-weight: 500;
+}
+.text-semibold {
+  font-weight: 600;
+}
+.text-bold {
+  font-weight: 700;
+}
+.text-line-through {
+  text-decoration: line-through;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-truncatre {
+  overflow: hidden;
+  text-decoration: ellipse;
+  white-space: nowrap;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* Text Align */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* Line Height */
+.line-height-normal {
+  line-height: normal;
+}
+.line-height-xs {
+  line-height: 1.1;
+}
+.line-height-sm {
+  line-height: 1.2;
+}
+.line-height-md {
+  line-height: 1.4;
+}
+.line-height-lg {
+  line-height: 1.58;
+}
+.line-height-xl {
+  line-height: 1.72;
+}
+
+/* Letter Spacing */
+.letter-spacing-normal {
+  letter-spacing: normal;
+}
+.letter-spacing-xs {
+  letter-spacing: -0.1em;
+}
+.letter-spacing-sm {
+  letter-spacing: -0.05em;
+}
+.letter-spacing-md {
+  letter-spacing: 0.05em;
+}
+.letter-spacing-lg {
+  letter-spacing: 0.1em;
+}
+.letter-spacing-xl {
+  letter-spacing: 2em;
+}
