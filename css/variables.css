@@ -140,6 +140,12 @@ Content:
   --text-unit: var(--text-base-size);
 }
 
+:root {
+  --heading-line-height: 1.2;
+  --heading-font-weight: 700;
+  --body-line-height: 1.4;
+}
+
 @media screen and (min-width: 64rem) {
   :root {
     --text-base-size: 1.25rem;
