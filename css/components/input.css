@@ -1,0 +1,38 @@
+/* 
+  Input
+*/
+
+.input-field {
+  background-color: transparent;
+  outline: none;
+  padding: var(--space-xxs);
+
+  color: var(--dark-light);
+  border: 2px solid var(--dark-lighter);
+  border-radius: var(--radius-lg);
+  transition: all 75ms var(--ease-in-out);
+}
+
+.input-field-float {
+  width: 100%;
+}
+
+.input-field:focus {
+  border-color: var(--dark-light);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.input-field.input-field-danger {
+  border-color: var(--danger-color);
+}
+.input-field.input-field-success {
+  border-color: var(--success-color);
+}
+.input-field.input-field-warn {
+  border-color: var(--warn-color);
+}
+
+.input-field.input-field-disabled {
+  border-color: var(--dark-lightest);
+  cursor: not-allowed;
+}
