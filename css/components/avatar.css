@@ -8,7 +8,6 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 
   /* Color */
   background-color: var(--dark-lighter); /* Default Color */
@@ -29,6 +28,8 @@
 
 .avatar > img {
   position: absolute;
+  min-width: 100%;
+  border-radius: inherit;
   aspect-ratio: 1/1;
 }
 
