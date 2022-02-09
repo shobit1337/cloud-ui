@@ -1,0 +1,39 @@
+/* 
+  Input
+*/
+
+.input {
+  background-color: transparent;
+  outline: none;
+  padding: var(--space-xxs);
+
+  color: var(--dark-light);
+  border: 2px solid var(--dark-lighter);
+  border-radius: var(--radius-lg);
+  transition: all 75ms var(--ease-in-out);
+}
+
+.input-float {
+  width: 100%;
+}
+
+.input:focus {
+  border-color: var(--dark-light);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.input.input-danger {
+  border-color: var(--danger-color);
+}
+.input.input-success {
+  border-color: var(--success-color);
+}
+.input.input-warn {
+  border-color: var(--warn-color);
+}
+
+.input.input-disabled {
+  border-color: var(--dark-lightest);
+  cursor: not-allowed;
+  /* background-color: var(--dark-lightest); */
+}
