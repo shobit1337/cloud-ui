@@ -1,0 +1,45 @@
+/* 
+  Badge
+ */
+
+.badge {
+  display: inline-flex;
+  border-radius: var(--radius-sm);
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: var(--space-xxxs);
+}
+
+.icon-badge {
+  display: inline-block;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.icon-badge > .badge {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1rem;
+}
+
+.avatar > .badge {
+  aspect-ratio: 1/1;
+  position: absolute;
+  width: 0.4em;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+/* Colors */
+.badge-danger {
+  background-color: var(--danger-color);
+}
+.badge-success {
+  background-color: var(--success-color);
+}
+.badge-warn {
+  background-color: var(--warn-color);
+}
