@@ -26,7 +26,8 @@
   opacity: 0.9;
 }
 
-.avatar > img {
+.avatar > img,
+.avatar-image {
   position: absolute;
   min-width: 100%;
   border-radius: inherit;
