@@ -2,7 +2,7 @@
   Input
 */
 
-.input {
+.input-field {
   background-color: transparent;
   outline: none;
   padding: var(--space-xxs);
@@ -13,27 +13,26 @@
   transition: all 75ms var(--ease-in-out);
 }
 
-.input-float {
+.input-field-float {
   width: 100%;
 }
 
-.input:focus {
+.input-field:focus {
   border-color: var(--dark-light);
   box-shadow: var(--box-shadow-sm);
 }
 
-.input.input-danger {
+.input-field.input-field-danger {
   border-color: var(--danger-color);
 }
-.input.input-success {
+.input-field.input-field-success {
   border-color: var(--success-color);
 }
-.input.input-warn {
+.input-field.input-field-warn {
   border-color: var(--warn-color);
 }
 
-.input.input-disabled {
+.input-field.input-field-disabled {
   border-color: var(--dark-lightest);
   cursor: not-allowed;
-  /* background-color: var(--dark-lightest); */
 }
