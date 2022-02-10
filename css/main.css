@@ -11,6 +11,14 @@ CloudUI - developed with 💗 by Shobit
 @import "./reset.css";
 @import "./variables.css";
 
+/* Utilities */
+@import "./utilities/border.css";
+@import "./utilities/colors.css";
+@import "./utilities/display.css";
+@import "./utilities/margin.css";
+@import "./utilities/padding.css";
+@import "./utilities/text.css";
+
 /* Components */
 @import "./components/avatar.css";
 @import "./components/button.css";
