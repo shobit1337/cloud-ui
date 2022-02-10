@@ -1,0 +1,36 @@
+/* 
+  Image
+*/
+
+/* 
+  Content:
+    - Fluid Image (Responsive)
+    - Square Image
+    - rounded (Rounded corners)
+    - circle
+*/
+
+.image-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-square {
+  --size: var(--space-xxxxl);
+  height: var(--size);
+  width: auto;
+  aspect-ratio: 1/1;
+}
+
+.image-rounded {
+  max-width: 100%;
+  border-radius: var(--radius-md);
+}
+
+.image-circle {
+  --size: var(--space-xxxxl);
+  width: var(--size);
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
