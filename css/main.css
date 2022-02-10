@@ -29,6 +29,7 @@ CloudUI - developed with 💗 by Shobit
 @import "./components/list.css";
 @import "./components/modal.css";
 @import "./components/image.css";
+@import "./components/navbar.css";
 
 /* Misc Components */
 @import "./components/starrating.css";
