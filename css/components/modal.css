@@ -17,6 +17,7 @@
   border: 1px solid var(--dark-lightest);
   border-radius: var(--radius-md);
   box-shadow: var(--box-shadow-sm);
+  background-color: var(--light-light);
 }
 
 .modal-header {
