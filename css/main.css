@@ -18,6 +18,7 @@ CloudUI - developed with 💗 by Shobit
 @import "./utilities/margin.css";
 @import "./utilities/padding.css";
 @import "./utilities/text.css";
+@import "./utilities/grid-layout.css";
 
 /* Components */
 @import "./components/avatar.css";
