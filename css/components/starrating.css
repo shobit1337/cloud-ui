@@ -1,0 +1,9 @@
+/* Star-raiting */
+
+.far.fa-star {
+  color: var(--dark-lighter);
+}
+
+.fas.fa-star {
+  color: var(--warn-color);
+}
