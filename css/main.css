@@ -18,7 +18,6 @@ CloudUI - developed with 💗 by Shobit
 @import "./utilities/margin.css";
 @import "./utilities/padding.css";
 @import "./utilities/text.css";
-@import "./utilities/grid-layout.css";
 
 /* Components */
 @import "./components/avatar.css";
@@ -31,6 +30,7 @@ CloudUI - developed with 💗 by Shobit
 @import "./components/modal.css";
 @import "./components/image.css";
 @import "./components/navbar.css";
+@import "./components/grid.css";
 
 /* Misc Components */
 @import "./components/starrating.css";
