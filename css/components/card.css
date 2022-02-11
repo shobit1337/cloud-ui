@@ -1,0 +1,120 @@
+/* 
+  Card Component
+*/
+
+/* 
+  Variations:
+    - card-badge
+    - card-close DONE
+    - card-overlay DONE
+    - text only car DONE
+    - card with image DONE
+    - card with shadow DONE
+
+*/
+
+.card {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid var(--dark-lighter);
+  border-radius: var(--radius-lg);
+  max-width: var(--space-xxxxl);
+  overflow: hidden;
+}
+
+.card-square {
+  aspect-ratio: 1/1;
+}
+
+.card-image {
+  aspect-ratio: 1/1;
+  width: 100%;
+  order: 1;
+}
+
+.card-header {
+  order: 0;
+  border-bottom: 1px solid var(--dark-lighter);
+  padding: var(--space-xs);
+}
+
+.card-footer {
+  order: 3;
+  border-top: 1px solid var(--dark-lighter);
+  padding: var(--space-xs);
+}
+
+.card-main {
+  order: 2;
+  padding: var(--space-xs);
+  overflow: hidden;
+}
+
+.card-title {
+  display: block;
+  margin-top: var(--space-xs);
+  font-size: var(--text-md);
+  color: var(--dark-color);
+}
+
+.card-text {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--dark-light);
+  overflow: hidden;
+}
+
+/* horizontal */
+.card-horizontal {
+  max-width: 32rem;
+  max-height: var(--space-xxxl);
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.card-horizontal .card-image {
+  align-self: center;
+  height: 100%;
+}
+
+.card-close {
+  color: var(--dark-lighter);
+  position: absolute;
+  top: 1%;
+  z-index: 3;
+  right: 1%;
+  font-size: var(--text-xs);
+}
+
+.card-close:hover {
+  cursor: pointer;
+  color: var(--dark-light);
+}
+
+.card-overlay {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  padding: var(--component-padding);
+
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  transition: all 250ms var(--ease-in-out);
+
+  opacity: 0;
+}
+.card-overlay:hover {
+  opacity: 0.75;
+}
+
+.card-shadow {
+  box-shadow: var(--box-shadow-md);
+}
+
+.card-badge {
+  position: absolute;
+  display: inline-block;
+  top: var(--space-xs);
+  left: var(--space-xs);
+}
