@@ -1,0 +1,6 @@
+/* Docs Stylesheet */
+
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
