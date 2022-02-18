@@ -1,27 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/docs/css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Cloud UI - Documentation</title>
-  </head>
-  <body class="">
-    <nav class="navbar navbar-sticky navbar-dark">
-      <a href="#sidenav-open" class="navbar-hamburger">
-        <i class="fas fa-bars"></i>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/docs/css/style.css" />
+
+  <title>Cloud UI - Documentation</title>
+</head>
+
+<body class="">
+  <nav class="navbar navbar-sticky navbar-dark">
+    <a href="#sidenav-open" class="navbar-hamburger">
+      <i class="fas fa-bars"></i>
+    </a>
+    <span class="navbar-logo text-primary text-semibold text-uppercase brand"
+      style="height: 80%; display: flex; align-items: center; gap: 1rem">
+      <img src="/docs/assets/cloud-logo.svg" alt="" style="height: 100%;">
+      Cloud UI</span>
+    <ul class="navbar-list">
+      <a href="index.html">
+        <li class="navbar-item">Homepage</li>
       </a>
-      <span class="navbar-logo">Cloud UI</span>
-      <ul class="navbar-list">
-        <a href="index.html"> <li class="navbar-item">Homepage</li></a>
-        <a href="https://github.com/shobit1337/cloud-ui/"
-          ><li class="navbar-item">Github</li></a
-        >
+      <a class="btn btn-rounded btn-outlined btn-xs" href="https://github.com/shobit1337/cloud-ui/">
+        <li class="navbar-item">Github</li>
+      </a>
+    </ul>
+  </nav>
+  <main class="docs-container">
+    <!-- SIDEBAR LEFT -->
+    <aside class="sidebar-left">
+      <ul class="list">
+        <div class="list-title">Getting Started</div>
+        <a href="#Introduction">
+          <li class="list-item">Introduction</li>
+        </a>
+        <a href="#Colors">
+          <li class="list-item">Colors</li>
+        </a>
+        <a href="#Typography">
+          <li class="list-item">Typography</li>
+        </a>
       </ul>
-    </nav>
-  </body>
+      <ul class="list">
+        <div class="list-title">Utilities</div>
+        <a href="#Border">
+          <li class="list-item">Border</li>
+        </a>
+        <a href="#Display">
+          <li class="list-item">Display</li>
+        </a>
+        <a href="#Margin">
+          <li class="list-item">Margin</li>
+        </a>
+        <a href="#Padding">
+          <li class="list-item">Padding</li>
+        </a>
+        <a href="#Text">
+          <li class="list-item">Text</li>
+        </a>
+      </ul>
+      <ul class="list">
+        <div class="list-title">Components</div>
+        <a href="#Alert">
+          <li class="list-item">Alert</li>
+        </a>
+        <a href="#Avatar">
+          <li class="list-item">Avatar</li>
+        </a>
+        <a href="#Badge">
+          <li class="list-item">Badge</li>
+        </a>
+        <a href="#Button">
+          <li class="list-item">Button</li>
+        </a>
+        <a href="#Card">
+          <li class="list-item">Card</li>
+        </a>
+        <a href="#Grid">
+          <li class="list-item">Grid</li>
+        </a>
+        <a href="#Image">
+          <li class="list-item">Image</li>
+        </a>
+        <a href="#Input">
+          <li class="list-item">Input</li>
+        </a>
+        <a href="#List">
+          <li class="list-item">List</li>
+        </a>
+        <a href="#Modal">
+          <li class="list-item">Modal</li>
+        </a>
+        <a href="#Navbar">
+          <li class="list-item">Navbar</li>
+        </a>
+        <a href="#Star">
+          <li class="list-item">Star Rating</li>
+        </a>
+        <a href="#Toast">
+          <li class="list-item">Toast</li>
+        </a>
+      </ul>
+    </aside>
+
+    <!-- DOCS MAIN -->
+    <article class="docs-main">
+      <h1 id="getting-started" class="text-primary">Cloud UI</h1>
+      <p>
+        Cloud UI is utility cum component library, developed and managed by
+        Shobit Deshwal.
+      </p>
+      <p>
+        Cloud UI provides you a readymade utilites classes and component
+        structure, which can be easily be imported to any web project. It is
+        componetly made in CSS and follows industry best practices. CloudUI
+        will help you create beautiful and responsive websites without any
+        worries
+      </p>
+      <hr />
+      <!-- Introduction -->
+      <h2 id="Introduction" class="text-primary">Introduction</h2>
+      <p>
+        In order to use the components in your project, Copy and paste the
+        code in the head tag of your html document, above all other style
+        sheets.
+      </p>
+      <p>
+        Once you are done with the first step, you can easily use the
+        components by just adding class names to your html elements.
+      </p>
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28212%2C235%2C249%2C0%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcloud-ui-css.netlify.app%252Fcss%252Fmain.css%2522%253E%250A"
+        style="border:0px;height: auto; overflow:hidden;width: 100%;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      <hr />
+      <h3 class="text-primary">Customisable</h3>
+      <p>
+        If you like to add your own css over and give your website your own
+        look. You can simply provide your own custom stylesheet.
+      </p>
+      <p>
+        Just simply import you css file after the cloudUI import link, As
+        shown below
+      </p>
+
+      <p>
+        You can go another step deep and edit the variaibles, It will be auto
+        applied to the whole library.
+      </p>
+      <p>Head over to <a class="link" href="#link"> Variables</a></p>
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28212%2C235%2C249%2C0%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcloud-ui-css.netlify.app%252Fcss%252Fmain.css%2522%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522styles.css%2522%253E%250A"
+        style="width: 761px; height: 294px; border:0; overflow:hidden;align-items: center;width: 100%;"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      </iframe>
+
+      <hr/>
+
+      <!-- Alerts -->
+      <h3>Alerts</h3>
+      <p>
+        Alerts provide highlighted feedback messages for typical user actions.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">alert</li>
+        <li class="badge badge-secondary">alert-close</li>
+        <li class="badge badge-secondary">alert-icon</li>
+      </p>
+      <p>
+        <span class="text-bold">Color variations:</span>
+        <li class="badge badge-secondary">alert-primary</li>
+        <li class="badge badge-secondary">alert-secondary</li>
+        <li class="badge badge-secondary">alert-accient</li>
+        <li class="badge badge-secondary">alert-danger</li>
+        <li class="badge badge-secondary">alert-success</li>
+        <li class="badge badge-secondary">alert-warn</li>
+        <li class="badge badge-secondary">alert-dark</li>
+        <li class="badge badge-secondary">alert-light</li>
+      </p>
+
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <!-- Alert Codepen -->
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="jOaLyQN"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/jOaLyQN">
+            Untitled</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- Avatars -->
+      <h3>Avatars</h3>
+      <p>
+        Avatars are small containers used to show display picture mostly. You can use the following premade classes to quicky create a avatar using image, text or icon.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">avatar</li>
+        <li class="badge badge-secondary">avatar-image</li>
+        <li class="badge badge-secondary">alert-rounded</li>
+        <li class="badge badge-secondary">alert-circle</li>
+      </p>
+      <p> 
+        <span class="text-bold">Size variations:</span>
+        <li class="badge badge-secondary">avatar-sm</li>
+        <li class="badge badge-secondary">avatar-md</li>
+        <li class="badge badge-secondary">alert-xl</li>
+        <li class="badge badge-secondary">alert-xxl</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <!-- Avatars Codepen -->
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="rNYzjYO"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/rNYzjYO">
+            Untitled</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- Badge -->
+      <h3>Badge</h3>
+      <p>
+        Badges can contain words, notifications or even be used a chips, to hightlight sometime in the document. Further you can combine a badge inside a avatar element to use it as a online status badge.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">badge</li>
+        <li class="badge badge-secondary">icon-badge</li>
+        <li class="badge badge-secondary">alert-rounded</li>
+      </p>
+      <p> 
+        <span class="text-bold">Size variations:</span>
+        <li class="badge badge-secondary">badge-danger</li>
+        <li class="badge badge-secondary">avatar-success</li>
+        <li class="badge badge-secondary">alert-warn</li>
+        <li class="badge badge-secondary">alert-xxl</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="qBVXmEw"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/qBVXmEw">
+            Untitled</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- Buttons -->
+      <h3>Buttons</h3>
+      <p>
+        Buttons are the most commonly used component in any website, Cloud UI provides multiple variations that you can directly use in your website.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">btn</li>
+        <li class="badge badge-secondary">btn-outlined</li>
+        <li class="badge badge-secondary">btn-rounded</li>
+        <li class="badge badge-secondary">btn-action</li>
+      </p>
+      <p> 
+        <span class="text-bold">Colors variations:</span>
+        <li class="badge badge-secondary">btn-primary</li>
+        <li class="badge badge-secondary">btn-secondary</li>
+        <li class="badge badge-secondary">btn-accient</li>
+        <li class="badge badge-secondary">btn-danger</li>
+        <li class="badge badge-secondary">btn-success</li>
+        <li class="badge badge-secondary">btn-warn</li>
+        <li class="badge badge-secondary">btn-dark</li>
+        <li class="badge badge-secondary">btn-light</li>
+        <li class="badge badge-secondary">btn-disabled</li>
+      </p>
+      <p> 
+        <span class="text-bold">Size variations:</span>
+        <li class="badge badge-secondary">btn-xs</li>
+        <li class="badge badge-secondary">btn-sm</li>
+        <li class="badge badge-secondary">btn-md</li>
+        <li class="badge badge-secondary">btn-lg</li>
+        <li class="badge badge-secondary">btn-xl</li>
+        <li class="badge badge-secondary">btn-xxl</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="GROvmNq"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/GROvmNq">
+            Untitled</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+
+      <!-- Links -->
+      <h4>Links</h4>
+      <p>
+        Links are similar to button
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">link</li>
+        <li class="badge badge-secondary">link-underlined</li>
+      </p>
+      <p> 
+        <span class="text-bold">Color classes:</span>
+        <li class="badge badge-secondary">link-primary</li>
+        <li class="badge badge-secondary">link-secondary</li>
+        <li class="badge badge-secondary">link-accient</li>
+      </p>
+      
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="KKyvmrx"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/KKyvmrx">
+            Untitled</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- Cards -->
+      <h3>Cards</h3>
+      <p>
+        Cards can customized to any extend, It can be as simple as just text or it can be a product listing card or any kind of you need.
+      
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">card</li>
+        <li class="badge badge-secondary">card-square</li>
+        <li class="badge badge-secondary">card-horizontal</li>
+      </p>
+      <p> 
+        <span class="text-bold">Card Items classes:</span>
+        <li class="badge badge-secondary">card-image</li>
+        <li class="badge badge-secondary">card-header</li>
+        <li class="badge badge-secondary">card-footer</li>
+        <li class="badge badge-secondary">card-main</li>
+        <li class="badge badge-secondary">card-text</li>
+        <li class="badge badge-secondary">card-title</li>
+        <li class="badge badge-secondary">card-close</li>
+        <li class="badge badge-secondary">card-overlay</li>
+        <li class="badge badge-secondary">card-badge</li>
+      </p>
+      
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="gOXvXjw" data-user="shobit1337" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/gOXvXjw">
+        Card--Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- Images -->
+      <h3>Image</h3>
+      <p>
+Cloud UI provides varios classes that you can use as per your need to make your images responsive or of some fixed design.      
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">image-fluid</li>
+        <li class="badge badge-secondary">image-square</li>
+        <li class="badge badge-secondary">image-rounded</li>
+        <li class="badge badge-secondary">image-circle</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="PoOKmLJ"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/PoOKmLJ">
+            Untitled</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- Inputs -->
+      <h3>Inputs</h3>
+      <p>
+        Different Variations of input fields to be used in different cases.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">input-field</li>
+        <li class="badge badge-secondary">input-field-float</li>
+      </p>
+        <span class="text-bold">Colors classes:</span>
+        <li class="badge badge-secondary">input-field-danger</li>
+        <li class="badge badge-secondary">input-field-success</li>
+        <li class="badge badge-secondary">input-field-warn</li>
+        <li class="badge badge-secondary">input-field-disabled</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="abVyWrz"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/abVyWrz">
+            Untitled</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- Lists -->
+      <h3>Lists</h3>
+      <p>
+        Lists are used to diaply a list of items, Cloud UI provides two variations of lists.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">list</li>
+        <li class="badge badge-secondary">list-horizontal</li>
+      </p>
+        <span class="text-bold">Item classes:</span>
+        <li class="badge badge-secondary">list-title</li>
+        <li class="badge badge-secondary">list-item</li>
+        <li class="badge badge-secondary">list-item-active</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="podrPXq"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/podrPXq">
+            Lists--Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- Modal -->
+      <h3>Modal</h3>
+      <p>
+        Modals are dialog box which display above the other element and require some kind of actions or display import message to user.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">modal</li>
+      </p>
+        <span class="text-bold">Item classes:</span>
+        <li class="badge badge-secondary">modal-header</li>
+        <li class="badge badge-secondary">modal-main</li>
+        <li class="badge badge-secondary">modal-footer</li>
+        <li class="badge badge-secondary">modal-close</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result" data-slug-hash="wvPqrKg"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/wvPqrKg">
+            Modal--Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- NavBar -->
+      <h3>Navbar</h3>
+      <p>
+        Navigation are the main part of almost every website for the purpose of naviations to different pages on website.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">navbar</li>
+        <li class="badge badge-secondary">navbar-sticky</li>
+        <li class="badge badge-secondary">navbar-dark</li>
+      </p>
+        <span class="text-bold">Item classes:</span>
+        <li class="badge badge-secondary">navbar-list</li>
+        <li class="badge badge-secondary">navbar-item</li>
+        <li class="badge badge-secondary">navbar-hamburger</li>
+        <li class="badge badge-secondary">modal-close</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result" data-slug-hash="OJOjxNR"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/OJOjxNR">
+            Untitled</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+
+      <!-- Star Rating -->
+      <h3>Star Rating</h3>
+      <p>Star Rating component is based on javascript. In order to work you must include script tag and import cloud-ui js file in your html.</p>
+      <p>
+        <li class="badge">star-rating</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result" data-slug-hash="KKyvXNZ"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/KKyvXNZ">
+            StarRating-Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+      <!-- Toasts -->
+      <h3>Toast</h3>
+      <p>Toasts are used to show notification on performing any action. Cloud-UI provides different styled classes for toast messages.</p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">toast</li>
+        <li class="badge badge-secondary">toast-icon</li>
+        <li class="badge badge-secondary">toast-close</li>
+      </p>
+      <p>
+        <span class="text-bold">Position classes:</span>
+        <li class="badge badge-secondary">toast-right-top</li>  
+        <li class="badge badge-secondary">toast-right-bottom</li>  
+        <li class="badge badge-secondary">toast-left-top</li>  
+        <li class="badge badge-secondary">toast-left-bottom</li>  
+        <li class="badge badge-secondary">toast-center-top</li>  
+        <li class="badge badge-secondary">toast-center-bottom</li>  
+      </p>
+      <p>
+        <span class="text-bold">Colors classes:</span>
+        <li class="badge badge-secondary">toast-primary</li>
+        <li class="badge badge-secondary">toast-secondary</li>
+        <li class="badge badge-secondary">toast-accient</li>
+        <li class="badge badge-secondary">toast-danger</li>
+        <li class="badge badge-secondary">toast-warn</li>
+        <li class="badge badge-secondary">toast-success</li>
+        <li class="badge badge-secondary">toast-dark</li>
+        <li class="badge badge-secondary">toast-light</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result" data-slug-hash="zYPdENy"
+        data-user="shobit1337"
+        style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/zYPdENy">
+            Toast-Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+    </article>
+
+    <!-- SIDEBAR RIGHT -->
+    <aside class="sidebar-right">On this page</aside>
+  </main>
+</body>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 </html>
