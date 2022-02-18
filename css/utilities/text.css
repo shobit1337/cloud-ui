@@ -44,6 +44,10 @@ small,
   font-size: var(--text-sm, 0.75rem);
 }
 
+p {
+  margin: var(--space-xs) auto;
+}
+
 /* Text Size */
 .text-xs {
   font-size: var(--text-xs);
