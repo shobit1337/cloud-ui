@@ -21,13 +21,15 @@
 }
 
 .list-title {
+  margin-top: 0.5rem;
   font-weight: 500;
   padding: 0.5rem;
-  border-bottom: 1px solid var(--dark-color);
+  border-bottom: 1px solid var(--dark-lightest);
 }
 
 .list-item {
   padding: 0.5rem;
+  padding-left: 1rem;
   text-decoration: none;
   list-style: none;
   width: 100%;
@@ -35,11 +37,11 @@
 
 .list-item:hover,
 .list-item:focus {
-  background-color: var(--primary-light);
+  background-color: var(--primary-lightest);
 }
 
 .list-item-active {
-  background-color: var(--primary-color);
+  background-color: var(--primary-lighter);
 }
 
 .list-item-disabled {
