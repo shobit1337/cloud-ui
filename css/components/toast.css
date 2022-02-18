@@ -30,8 +30,8 @@
   top: var(--space-xxxs);
   cursor: pointer;
 }
-.alert > .alert-close:hover,
-.alert > .alert-close:focus {
+.toast > .toast-close:hover,
+.toast > .toast-close:focus {
   opacity: 0.8;
 }
 
