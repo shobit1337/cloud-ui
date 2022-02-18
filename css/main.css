@@ -8,16 +8,8 @@ CloudUI - developed with 💗 by Shobit
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Basics */
-@import "./reset.css";
-@import "./variables.css";
-
-/* Utilities */
-@import "./utilities/border.css";
-@import "./utilities/colors.css";
-@import "./utilities/display.css";
-@import "./utilities/margin.css";
-@import "./utilities/padding.css";
-@import "./utilities/text.css";
+@import url("/css/reset.css");
+@import url("/css/variables.css");
 
 /* Components */
 @import "./components/avatar.css";
@@ -34,4 +26,12 @@ CloudUI - developed with 💗 by Shobit
 @import "./components/card.css";
 
 /* Misc Components */
-@import "./components/starrating.css";
+@import url("/css/components/starrating.css");
+
+/* Utilities */
+@import url("/css/utilities/border.css");
+@import url("/css/utilities/colors.css");
+@import url("/css/utilities/display.css");
+@import url("/css/utilities/margin.css");
+@import url("/css/utilities/padding.css");
+@import url("/css/utilities/text.css");
