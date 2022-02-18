@@ -1,0 +1,17 @@
+/* 
+  Slider
+*/
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0.5rem;
+}
+
+/* webkit scrollbar thumb is the part of the scrollbar which we hold to scroll  */
+::-webkit-scrollbar-thumb {
+  background: #606060;
+  border-radius: var(--radius-md);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #606060c0;
+}
