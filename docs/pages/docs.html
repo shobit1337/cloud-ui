@@ -21,12 +21,12 @@
     <a href="#sidenav-open" class="navbar-hamburger">
       <i class="fas fa-bars"></i>
     </a>
-    <span class="navbar-logo text-primary text-semibold text-uppercase brand"
+    <a href="/" class="navbar-logo text-primary text-semibold text-uppercase brand"
       style="height: 80%; display: flex; align-items: center; gap: 1rem">
       <img src="/docs/assets/cloud-logo.svg" alt="" style="height: 100%;">
-      Cloud UI</span>
+      Cloud UI</a>
     <ul class="navbar-list">
-      <a href="index.html">
+      <a href="/">
         <li class="navbar-item">Homepage</li>
       </a>
       <a class="btn btn-rounded btn-outlined btn-xs" href="https://github.com/shobit1337/cloud-ui/">
@@ -39,74 +39,59 @@
     <aside class="sidebar-left">
       <ul class="list">
         <div class="list-title">Getting Started</div>
-        <a href="#Introduction">
+        <a href="#introduction">
           <li class="list-item">Introduction</li>
         </a>
-        <a href="#Colors">
+        <a href="#colors">
           <li class="list-item">Colors</li>
         </a>
-        <a href="#Typography">
+        <a href="#typography">
           <li class="list-item">Typography</li>
         </a>
       </ul>
       <ul class="list">
-        <div class="list-title">Utilities</div>
-        <a href="#Border">
-          <li class="list-item">Border</li>
-        </a>
-        <a href="#Display">
-          <li class="list-item">Display</li>
-        </a>
-        <a href="#Margin">
-          <li class="list-item">Margin</li>
-        </a>
-        <a href="#Padding">
-          <li class="list-item">Padding</li>
-        </a>
-        <a href="#Text">
-          <li class="list-item">Text</li>
-        </a>
-      </ul>
-      <ul class="list">
         <div class="list-title">Components</div>
-        <a href="#Alert">
+        <a href="#alert">
           <li class="list-item">Alert</li>
         </a>
-        <a href="#Avatar">
+        <a href="#avatar">
           <li class="list-item">Avatar</li>
         </a>
-        <a href="#Badge">
+        <a href="#badge">
           <li class="list-item">Badge</li>
         </a>
-        <a href="#Button">
+        <a href="#button">
           <li class="list-item">Button</li>
         </a>
-        <a href="#Card">
+        <a href="#link">
+          <li class="list-item">Link</li>
+        </a>
+        <a href="#card">
           <li class="list-item">Card</li>
         </a>
-        <a href="#Grid">
-          <li class="list-item">Grid</li>
-        </a>
-        <a href="#Image">
+        <a href="#image">
           <li class="list-item">Image</li>
         </a>
-        <a href="#Input">
+        <a href="#input">
           <li class="list-item">Input</li>
         </a>
-        <a href="#List">
+        <a href="#list">
           <li class="list-item">List</li>
         </a>
-        <a href="#Modal">
+        <a href="#modal">
           <li class="list-item">Modal</li>
         </a>
-        <a href="#Navbar">
+        <a href="#navbar">
           <li class="list-item">Navbar</li>
         </a>
-        <a href="#Star">
+        <a href="#star">
           <li class="list-item">Star Rating</li>
         </a>
-        <a href="#Toast">
+        <a href="#toast">
           <li class="list-item">Toast</li>
+        </a>
+        <a href="#grid">
+          <li class="list-item">Grid</li>
         </a>
       </ul>
     </aside>
@@ -127,7 +112,7 @@
       </p>
       <hr />
       <!-- Introduction -->
-      <h2 id="Introduction" class="text-primary">Introduction</h2>
+      <h2 id="introduction" class="text-primary">Introduction</h2>
       <p>
         In order to use the components in your project, Copy and paste the
         code in the head tag of your html document, above all other style
@@ -139,7 +124,7 @@
       </p>
       <iframe
         src="https://carbon.now.sh/embed?bg=rgba%28212%2C235%2C249%2C0%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcloud-ui-css.netlify.app%252Fcss%252Fmain.css%2522%253E%250A"
-        style="border:0px;height: auto; overflow:hidden;width: 100%;" sandbox="allow-scripts allow-same-origin">
+        style="border:0px;height: 7rem; overflow:hidden;width: 100%;" sandbox="allow-scripts allow-same-origin">
       </iframe>
       <hr />
       <h3 class="text-primary">Customisable</h3>
@@ -159,15 +144,146 @@
       <p>Head over to <a class="link" href="#link"> Variables</a></p>
       <iframe
         src="https://carbon.now.sh/embed?bg=rgba%28212%2C235%2C249%2C0%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcloud-ui-css.netlify.app%252Fcss%252Fmain.css%2522%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522styles.css%2522%253E%250A"
-        style="width: 761px; height: 294px; border:0; overflow:hidden;align-items: center;width: 100%;"
+        style="width: auto; height: auto; border:0; overflow:hidden;align-items: center;width: 100%;"
         sandbox="allow-scripts allow-same-origin">
       </iframe>
       </iframe>
 
       <hr/>
 
+      <!-- Colors -->
+      <h3 id="colors" class="text-primary">Colors</h3>
+      <hr/>
+      <h4>Available Colors:</h4>
+      <p>
+          <li>Primary</li>
+          <li>Secondary</li>
+          <li>Accient</li>
+          <li>Success</li>
+          <li>Danger</li>
+          <li>Warn</li>
+          <li>Light</li>
+          <li class="mb-xs">Dark</li>
+        With 3 shades of each color: <b>light</b>, <b>lighter</b>, <b>lightest</b>. Example: --color-primary-light, .text-danger-lighter or bg-dark-ligthest 
+      </p>
+      <!-- Colors boxes -->
+      <div class="grid grid-responsive">
+        <span class="bg-primary py-sm px-xxs text-light border text-center">--primary-color</span><span class="bg-secondary py-sm px-xxs text-light border">--secondary-color</span><span class="bg-accient py-sm px-xxs text-light border">--accient-color</span><span class="bg-success py-sm px-xxs text-light border">--success-color</span><span class="bg-danger py-sm px-xxs text-light border">--danger-color</span><span class="bg-warn py-sm px-xxs text-light border">--warn-color</span><span class="bg-dark py-sm px-xxs text-light border">--dark-color</span><span class="bg-light py-sm px-xxs text-dark border">--light-color</span>
+      </div>
+      <hr/>
+      <h4>Background Color Utilites:</h4>
+      <p>
+        Cloud UI provides utilites for Background colors, you can simply apply the class and change background color on the go.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">bg-primary</li>
+        <li class="badge badge-secondary">bg-secondary</li>
+        <li class="badge badge-secondary">bg-accient</li>
+        <li class="badge badge-secondary">bg-success</li>
+        <li class="badge badge-secondary">bg-danger</li>
+        <li class="badge badge-secondary">bg-warn</li>
+        <li class="badge badge-secondary">bg-dark</li>
+        <li class="badge badge-secondary">bg-light</li>
+      </p>
+      <hr/>
+      <h4>Text Color Utilites:</h4>
+      <p>
+        Cloud UI provides utilites for Background colors, you can simply apply the class and change text color on the go.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">text-primary</li>
+        <li class="badge badge-secondary">text-secondary</li>
+        <li class="badge badge-secondary">text-accient</li>
+        <li class="badge badge-secondary">text-success</li>
+        <li class="badge badge-secondary">text-danger</li>
+        <li class="badge badge-secondary">text-warn</li>
+        <li class="badge badge-secondary">text-dark</li>
+        <li class="badge badge-secondary">text-light</li>
+      </p>
+      <hr/>
+
+      <!-- Typography -->
+      <h3 id="typography" class="text-primary">Typography</h3>
+      <hr/>
+      <h4>Headings:</h4>
+      <p>
+        Custom Heading styling are applied by Cloud UI by defauly on h1, h2, h3, h4, h5, h6 and small tag.
+      </p>
+      <!-- Typography codepen -->
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="ZEaoJWR" data-user="shobit1337" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/ZEaoJWR">
+        Typography--Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+      <h4>Text Styles:</h4>
+      <p>
+        Custom Font styling are applied by Cloud UI by defauly. You can using the below given commands.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">text-italic</li>
+        <li class="badge badge-secondary">text-light</li>
+        <li class="badge badge-secondary">text-normal</li>
+        <li class="badge badge-secondary">text-medium</li>
+        <li class="badge badge-secondary">text-semibold</li>
+        <li class="badge badge-secondary">text-bold</li>
+        <li class="badge badge-secondary">text-line-through</li>
+        <li class="badge badge-secondary">text-underline</li>
+        <li class="badge badge-secondary">text-uppercase</li>
+        <li class="badge badge-secondary">text-truncatre</li>
+        <li class="badge badge-secondary">text-lowercase</li>
+        <li class="badge badge-secondary">text-capitalize</li>
+      </p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="VwrxzMv" data-user="shobit1337" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/VwrxzMv">
+        Font-Style--Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <hr/>
+      <h4>Text Align:</h4>
+      <p>
+        Custom Font styling are applied by Cloud UI by defauly. You can using the below given commands.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">text-center</li>
+        <li class="badge badge-secondary">text-left</li>
+        <li class="badge badge-secondary">text-right</li>
+        <li class="badge badge-secondary">text-justify</li>
+        </p>
+        <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="JjOvpYX" data-user="shobit1337" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/shobit1337/pen/JjOvpYX">
+          Text-Align--Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+      <hr/>
+      <h4>Text Sizes:</h4>
+      <p>
+        Modify text size with the cloud UI utilites, ranging from xs to xxxxl.
+      </p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">text-xs</li>
+        <li class="badge badge-secondary">text-sm</li>
+        <li class="badge badge-secondary">text-md</li>
+        <li class="badge badge-secondary">text-lg</li>
+        <li class="badge badge-secondary">text-xl</li>
+        <li class="badge badge-secondary">text-xxl</li>
+        <li class="badge badge-secondary">text-xxxl</li>
+        <li class="badge badge-secondary">text-xxxxl</li>
+        </p>
+        <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="zYPjRqx" data-user="shobit1337" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/shobit1337/pen/zYPjRqx">
+          Text-Size--Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+      <hr/>
+
       <!-- Alerts -->
-      <h3>Alerts</h3>
+      <h3 id="alert">Alerts</h3>
       <p>
         Alerts provide highlighted feedback messages for typical user actions.
       </p>
@@ -201,7 +317,7 @@
       <hr/>
 
       <!-- Avatars -->
-      <h3>Avatars</h3>
+      <h3 id="avatar">Avatars</h3>
       <p>
         Avatars are small containers used to show display picture mostly. You can use the following premade classes to quicky create a avatar using image, text or icon.
       </p>
@@ -231,7 +347,7 @@
       <hr/>
 
       <!-- Badge -->
-      <h3>Badge</h3>
+      <h3 id="badge">Badge</h3>
       <p>
         Badges can contain words, notifications or even be used a chips, to hightlight sometime in the document. Further you can combine a badge inside a avatar element to use it as a online status badge.
       </p>
@@ -259,7 +375,7 @@
       <hr/>
 
       <!-- Buttons -->
-      <h3>Buttons</h3>
+      <h3 id="button">Buttons</h3>
       <p>
         Buttons are the most commonly used component in any website, Cloud UI provides multiple variations that you can directly use in your website.
       </p>
@@ -301,7 +417,7 @@
       </p>
 
       <!-- Links -->
-      <h4>Links</h4>
+      <h4 id="link">Links</h4>
       <p>
         Links are similar to button
       </p>
@@ -329,7 +445,7 @@
       <hr/>
 
       <!-- Cards -->
-      <h3>Cards</h3>
+      <h3 id="card">Cards</h3>
       <p>
         Cards can customized to any extend, It can be as simple as just text or it can be a product listing card or any kind of you need.
       
@@ -362,7 +478,7 @@
       <hr/>
 
       <!-- Images -->
-      <h3>Image</h3>
+      <h3 id="image">Image</h3>
       <p>
 Cloud UI provides varios classes that you can use as per your need to make your images responsive or of some fixed design.      
       </p>
@@ -384,7 +500,7 @@ Cloud UI provides varios classes that you can use as per your need to make your 
       <hr/>
 
       <!-- Inputs -->
-      <h3>Inputs</h3>
+      <h3 id="input">Inputs</h3>
       <p>
         Different Variations of input fields to be used in different cases.
       </p>
@@ -393,12 +509,14 @@ Cloud UI provides varios classes that you can use as per your need to make your 
         <li class="badge badge-secondary">input-field</li>
         <li class="badge badge-secondary">input-field-float</li>
       </p>
+      <p>
         <span class="text-bold">Colors classes:</span>
         <li class="badge badge-secondary">input-field-danger</li>
         <li class="badge badge-secondary">input-field-success</li>
         <li class="badge badge-secondary">input-field-warn</li>
         <li class="badge badge-secondary">input-field-disabled</li>
       </p>
+      
       <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
       
       <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="abVyWrz"
@@ -411,7 +529,7 @@ Cloud UI provides varios classes that you can use as per your need to make your 
       <hr/>
 
       <!-- Lists -->
-      <h3>Lists</h3>
+      <h3 id="list">Lists</h3>
       <p>
         Lists are used to diaply a list of items, Cloud UI provides two variations of lists.
       </p>
@@ -420,6 +538,7 @@ Cloud UI provides varios classes that you can use as per your need to make your 
         <li class="badge badge-secondary">list</li>
         <li class="badge badge-secondary">list-horizontal</li>
       </p>
+      <p> 
         <span class="text-bold">Item classes:</span>
         <li class="badge badge-secondary">list-title</li>
         <li class="badge badge-secondary">list-item</li>
@@ -436,7 +555,7 @@ Cloud UI provides varios classes that you can use as per your need to make your 
       <hr/>
 
       <!-- Modal -->
-      <h3>Modal</h3>
+      <h3 id="modal">Modal</h3>
       <p>
         Modals are dialog box which display above the other element and require some kind of actions or display import message to user.
       </p>
@@ -444,6 +563,7 @@ Cloud UI provides varios classes that you can use as per your need to make your 
         <span class="text-bold">Available classes:</span>
         <li class="badge badge-secondary">modal</li>
       </p>
+      <p> 
         <span class="text-bold">Item classes:</span>
         <li class="badge badge-secondary">modal-header</li>
         <li class="badge badge-secondary">modal-main</li>
@@ -461,7 +581,7 @@ Cloud UI provides varios classes that you can use as per your need to make your 
       <hr/>
 
       <!-- NavBar -->
-      <h3>Navbar</h3>
+      <h3 id="navbar">Navbar</h3>
       <p>
         Navigation are the main part of almost every website for the purpose of naviations to different pages on website.
       </p>
@@ -471,6 +591,7 @@ Cloud UI provides varios classes that you can use as per your need to make your 
         <li class="badge badge-secondary">navbar-sticky</li>
         <li class="badge badge-secondary">navbar-dark</li>
       </p>
+      <p> 
         <span class="text-bold">Item classes:</span>
         <li class="badge badge-secondary">navbar-list</li>
         <li class="badge badge-secondary">navbar-item</li>
@@ -488,7 +609,7 @@ Cloud UI provides varios classes that you can use as per your need to make your 
       <hr/>
 
       <!-- Star Rating -->
-      <h3>Star Rating</h3>
+      <h3 id="star-rating">Star Rating</h3>
       <p>Star Rating component is based on javascript. In order to work you must include script tag and import cloud-ui js file in your html.</p>
       <p>
         <li class="badge">star-rating</li>
@@ -503,7 +624,7 @@ Cloud UI provides varios classes that you can use as per your need to make your 
       </p>
       <hr/>
       <!-- Toasts -->
-      <h3>Toast</h3>
+      <h3 id="toast">Toast</h3>
       <p>Toasts are used to show notification on performing any action. Cloud-UI provides different styled classes for toast messages.</p>
       <p> 
         <span class="text-bold">Available classes:</span>
@@ -539,11 +660,36 @@ Cloud UI provides varios classes that you can use as per your need to make your 
             Toast-Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
           on <a href="https://codepen.io">CodePen</a>.</span>
       </p>
+      <!-- Grids -->
+      <h3 id="gird">Grids</h3>
+      <p>Grids are used for layout purpose. Cloud-UI provides readymade classes for grid.</p>
+      <p> 
+        <span class="text-bold">Available classes:</span>
+        <li class="badge badge-secondary">grid</li>
+        <li class="badge badge-secondary">grid-responsive</li>
+        <li class="badge badge-secondary">grid-2</li>
+        <li class="badge badge-secondary">grid-3</li>
+        <li class="badge badge-secondary">grid-4</li>
+        <li class="badge badge-secondary">grid-5</li>
+        <li class="badge badge-secondary">grid-6</li>
+        <li class="badge badge-secondary">grid-7</li>
+        <li class="badge badge-secondary">grid-8</li>
+        <li class="badge badge-secondary">grid-9</li>
+        <li class="badge badge-secondary">grid-10</li>
+        <li class="badge badge-secondary">grid-11</li>
+        <li class="badge badge-secondary">grid-12</li>
+      </p>
+      <p class="mt-md">Check the below demo codepen code to check the usage and results, Feel free customize and play with it.</p>
+      <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="bGYMrpW" data-user="shobit1337" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/shobit1337/pen/bGYMrpW">
+        Grid--Cloud-UI</a> by shobit1337 (<a href="https://codepen.io/shobit1337">@shobit1337</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
       <hr/>
     </article>
 
     <!-- SIDEBAR RIGHT -->
-    <aside class="sidebar-right">On this page</aside>
+    <aside class="sidebar-right"></aside>
   </main>
 </body>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>

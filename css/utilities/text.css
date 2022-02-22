@@ -13,7 +13,11 @@ h2,
 h3,
 h4,
 .heading,
-.title {
+.title,
+.h1,
+.h2,
+.h3,
+.h4 {
   /* color: TODO: */
   line-height: var(--heading-line-height, 1.2);
   font-weight: var(--heading-font-weight, 700);
