@@ -1,0 +1,12 @@
+{
+  "name": "cloud-ui",
+  "version": "1.0.0",
+  "description": "CSS Component + Utility Library",
+  "main": "index.html",
+  "repository": "https://github.com/shobit1337/cloud-ui.git",
+  "author": "shobit1337 <shobitdeshwal1337@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "type .\\css\\reset.css > .\\dist\\cloudui.css && type .\\css\\variables.css >> .\\dist\\cloudui.css && type .\\css\\components\\*.css >> .\\dist\\cloudui.css && type .\\css\\utilities\\*.css >> .\\dist\\cloudui.css"
+  }
+}
