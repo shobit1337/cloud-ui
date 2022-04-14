@@ -2501,6 +2501,10 @@ p {
   white-space: nowrap;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 /* Text Align */
 .text-center {
   text-align: center;
